@@ -20,6 +20,7 @@ public class EmployeesController {
         staticFileLocation("/public");
 
         ManagersController managersController = new ManagersController();
+        EngineersController engineersController = new EngineersController();
 
         Seeds.seedData();
 
