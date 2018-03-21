@@ -45,6 +45,20 @@ public class DepartmentsController {
 
         }, new VelocityTemplateEngine());
 
+        post("/departments", (req, res) -> {
+
+            String title = req.queryParams("title");
+
+            Department department = new Department(title);
+
+            DBHelper.save(department);
+
+            res.redirect("/departments");
+
+            return null;
+
+        }, new VelocityTemplateEngine());
+
     }
 
 
