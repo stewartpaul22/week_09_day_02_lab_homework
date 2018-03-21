@@ -1,10 +1,12 @@
 package db;
 
 import models.Department;
+import models.Employee;
 import models.Manager;
 import org.hibernate.*;
 import org.hibernate.criterion.Restrictions;
 
+import java.security.acl.Owner;
 import java.util.List;
 
 public class DBHelper {
@@ -110,5 +112,15 @@ public class DBHelper {
         Criteria cr = session.createCriteria(Manager.class);
         cr.add(Restrictions.eq("department", department));
         return (Manager) cr.uniqueResult();
+    }
+
+    public static List<Employee> getEmployeesForDepartment(Department department){
+        session = HibernateUtil.getSessionFactory().openSession();
+        List<Employee> results = null;
+        Criteria cr = session.createCriteria(Employee.class);
+        cr.setResultTransformer(Criteria.DISTINCT_ROOT_ENTITY);
+        cr.add(Restrictions.eq("department", department));
+        results = getList(cr);
+        return results;
     }
 }

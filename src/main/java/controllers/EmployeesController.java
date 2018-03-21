@@ -21,6 +21,7 @@ public class EmployeesController {
 
         ManagersController managersController = new ManagersController();
         EngineersController engineersController = new EngineersController();
+        DepartmentsController departmentsController = new DepartmentsController();
 
         Seeds.seedData();
 

@@ -5,19 +5,26 @@
 </div>
 
 <div class="container">
+    #foreach($department in $departments)
+    <p>Department Title: $department.getTitle()</p>
     <table>
         <tr>
-            <th>Title</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Salary</th>
+            <th>Department</th>
         </tr>
 
-        #foreach($engineer in $engineers)
+        #foreach($employee in $employees)
+        #if($employee.getDepartment().getId() == $department.getId())
         <tr>
-            <td>$engineer.getFirstName()</td>
-            <td>$engineer.getLastName()</td>
-            <td>£$engineer.getSalary()</td>
-            <td>$engineer.getDepartment().getTitle()</td>
+            <td>$employee.getFirstName()</td>
+            <td>$employee.getLastName()</td>
+            <td>$employee.getSalary()</td>
+            <td>$employee.getDepartment().getTitle()</td>
         </tr>
         #end
-
+        #end
     </table>
+    #end
 </div>
