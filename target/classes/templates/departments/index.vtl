@@ -16,14 +16,14 @@
         </tr>
 
         #foreach($employee in $employees)
-        #if($employee.getDepartment().getId() == $department.getId())
-        <tr>
-            <td>$employee.getFirstName()</td>
-            <td>$employee.getLastName()</td>
-            <td>$employee.getSalary()</td>
-            <td>$employee.getDepartment().getTitle()</td>
-        </tr>
-        #end
+            #if($employee.getDepartment().getId() == $department.getId())
+            <tr>
+                <td>$employee.getFirstName()</td>
+                <td>$employee.getLastName()</td>
+                <td>$employee.getSalary()</td>
+                <td>$employee.getDepartment().getTitle()</td>
+            </tr>
+            #end
         #end
     </table>
     #end

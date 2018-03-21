@@ -36,6 +36,15 @@ public class DepartmentsController {
 
         }, new VelocityTemplateEngine());
 
+        get("/departments/new", (req, res) -> {
+
+            Map<String, Object> model = new HashMap<>();
+            model.put("template", "templates/departments/create.vtl");
+
+            return new ModelAndView(model, "templates/layout.vtl");
+
+        }, new VelocityTemplateEngine());
+
     }
 
 
