@@ -1,7 +1,6 @@
 package controllers;
 
 import db.DBHelper;
-import db.Seeds;
 import models.Employee;
 import spark.ModelAndView;
 import spark.template.velocity.VelocityTemplateEngine;
@@ -11,19 +10,14 @@ import java.util.List;
 import java.util.Map;
 
 import static spark.Spark.get;
-import static spark.SparkBase.staticFileLocation;
 
 public class EmployeesController {
 
-    public static void main(String[] args) {
+    public EmployeesController() {
+        this.setupEndpoints();
+    }
 
-        staticFileLocation("/public");
-
-        ManagersController managersController = new ManagersController();
-        EngineersController engineersController = new EngineersController();
-        DepartmentsController departmentsController = new DepartmentsController();
-
-        Seeds.seedData();
+    private void setupEndpoints() {
 
         get("/employees", (req, res) -> {
 
@@ -37,7 +31,6 @@ public class EmployeesController {
             return new ModelAndView(model, "templates/layout.vtl");
 
         }, new VelocityTemplateEngine());
-
 
     }
 
