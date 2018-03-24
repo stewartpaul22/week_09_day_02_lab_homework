@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5be87a-cf30-4ab0-8f6a-df04843fc51a" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/managers/edit.vtl" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/managers/show.vtl" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/ManagersController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/ManagersController.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/ManagersController.class" afterPath="$PROJECT_DIR$/target/classes/controllers/ManagersController.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/managers/edit.vtl" afterPath="$PROJECT_DIR$/src/main/resources/templates/managers/edit.vtl" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -153,8 +149,8 @@
           <file leaf-file-name="edit.vtl" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/resources/templates/managers/edit.vtl">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+                <state relative-caret-position="255">
+                  <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -271,10 +267,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/departments/create.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/db/Seeds.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/DepartmentsController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/managers/edit.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/managers/show.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/ManagersController.java" />
         <option value="$PROJECT_DIR$/src/main/java/models/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/managers/edit.vtl" />
       </list>
     </option>
   </component>
@@ -1231,8 +1227,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/managers/edit.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="255">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding />
         </state>
       </provider>
